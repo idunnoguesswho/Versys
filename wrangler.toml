@@ -1,0 +1,17 @@
+name = "versys"
+main = "src/index.js"
+compatibility_date = "2026-09-04"
+
+routes = [
+  { pattern = "versys.ekat.ca", custom_domain = true }
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "versys"
+database_id = "55e3248e-2b38-438d-8f22-c6e14a8c1183"
+
+# R2 not yet enabled on the Cloudflare account - add once available:
+# [[r2_buckets]]
+# binding = "BUCKET"
+# bucket_name = "versys"
