@@ -15,3 +15,23 @@ database_id = "55e3248e-2b38-438d-8f22-c6e14a8c1183"
 # [[r2_buckets]]
 # binding = "BUCKET"
 # bucket_name = "versys"
+
+# D1 schema lives in ./migrations — apply with:
+#   npx wrangler d1 migrations apply versys --remote
+# (wrangler reads migrations_dir from the d1_databases block; default is ./migrations)
+
+# --- Field ticket e-sign automation (non-secret settings) -------------------
+# Uncomment and fill in once the Acumatica custom endpoint exists.
+# Secrets (passwords, tokens) go in `wrangler secret put`, NOT here.
+# See docs/automation/field-ticket-esign.md.
+# [vars]
+# ACUMATICA_BASE_URL = "https://versys.acumatica.com"
+# ACUMATICA_TENANT = "Versys US"
+# ACUMATICA_ENDPOINT_NAME = "VersysExt"
+# ACUMATICA_ENDPOINT_VERSION = "24.200.001"
+# ACUMATICA_FT_ENTITY = "FieldTicket"
+# ACUMATICA_FT_KEY_FIELD = "RefNbr"
+# ACUMATICA_FT_SENT_DATE_FIELD = "CustomerSentDate"
+# ACUMATICA_REPORT_ENTITY = "FieldTicketUnpricedWeekly"
+# ACUMATICA_REPORT_PARAM = "RefNbr"
+# ADOBE_SIGN_SENDER_EMAIL = "office@versys.example"
