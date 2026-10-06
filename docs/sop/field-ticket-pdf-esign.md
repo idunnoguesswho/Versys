@@ -49,7 +49,8 @@ automatic reminders.
 
 5. Click the field ticket number (e.g. `VC-0001806`) to select it.
 6. Open the selected field ticket.
-7. In **Customer Sent Date**, pick **today's date**.
+7. In **Customer Sent Date**, pick **today's date** — the day the PDF is made,
+   even if the Adobe agreement is sent on a later day.
 8. Click **Save**.
 
 > **Check:** the date must be saved *before* you run the report, otherwise the
