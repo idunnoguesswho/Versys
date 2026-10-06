@@ -32,7 +32,18 @@ automatic reminders.
    <https://versys.acumatica.com/(W(5))/Main?CompanyID=Versys+US&ScreenId=GI990224>
 2. Click **Field Ticket list with Amount**.
 3. Click the **FT Send** tab/view.
-4. Open the **filter settings**, set the filters you need, then click **Apply**.
+4. Open the **filter settings**, choose the saved **FT Send** filter, and confirm
+   it has these four conditions (all joined with **And**), then click **Apply**:
+
+   | Property | Condition | Value |
+   |---|---|---|
+   | Status | Equals | Approved |
+   | Billable | Equals | ☑ (checked) |
+   | Customer Sent Date | Is Empty | |
+   | Description | Does Not Contain | Lebanon |
+
+   Every ticket left in the list still needs to go to the client. Work through
+   them one at a time with steps 5–16.
 
 ### 2. Stamp the Customer Sent Date
 
